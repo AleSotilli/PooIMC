@@ -1,0 +1,102 @@
+package abstracao;
+public class Carro {
+    String modelo;
+    String cor;
+    String armadura;
+    float peso;
+    boolean gasolina;
+    String vidro;
+    String pneu;
+    void status(){
+     System.out.print(" A cor do carro é " + this.cor );
+     System.out.println(" e está com combustível? " + this.gasolina);
+     
+ }
+    
+    
+}
+
+   
+   
+    
+   
+   .........................................................................
+
+   
+   
+package abstracao;
+public class Robo {
+    public String modelo;
+    public String cor;
+    public boolean arma;
+    public String armadura;
+    public int cargadaarma;
+    public float vida;
+    public float altura;
+    public float peso;
+    public boolean bateria;
+    public int ano;
+    
+    public boolean correndo; 
+            
+    void status(){
+     System.out.print(" Um robo " + this.cor );
+     System.out.println(" está armado? " + this.arma);
+     System.out.println("Quanto vida?" + this.vida);
+     System.out.println("Qual o peso?" + this.peso);
+     System.out.println("Qual o modelo?" + this.modelo);
+ }
+            
+    public void acao (){
+        correndo = true;
+ }
+    public void arma (){
+        arma = true;
+ } 
+   
+    public void modelo(){
+        modelo = "mega ManX7";
+        
+    }
+ }
+
+
+
+
+..............................................................
+
+
+
+package abstracao;
+public class mapa {
+    String cidade1;
+    String estrada;
+    String cidade2;
+    
+}
+
+..............................
+
+//Tema = Megamen
+package abstracao;
+
+public class Menu {
+    public static void main(String[] args) {
+        Robo c1 = new Robo();
+        c1.cor = "azul";
+        c1.arma();
+        c1.vida = 100f;
+        c1.status();
+        
+        Carro c2 = new Carro();
+        c2.cor = "preto";
+        c2.modelo = "desconhecido";
+        c2.gasolina = true;
+        c2.status();
+          
+    }
+   
+    
+}
+    
+
